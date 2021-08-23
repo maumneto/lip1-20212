@@ -15,7 +15,6 @@ public class Questao6 {
         while(n <= 10) {
             somaQuad = somaQuad + n*n;
             quadSoma = quadSoma + n;
-            quadSoma += n*n;
             n++;
         }
         System.out.println("A soma dos Quadrados é = " + somaQuad);
