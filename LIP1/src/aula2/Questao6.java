@@ -5,10 +5,6 @@
  */
 package aula2;
 
-/**
- *
- * @author newaccount
- */
 public class Questao6 {
     public static void main(String[] args) {
         int somaQuad = 0, quadSoma = 0, n = 0, diff = 0;
