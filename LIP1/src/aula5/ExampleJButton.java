@@ -31,6 +31,8 @@ public class ExampleJButton extends JFrame {
         TEXTOUTPUT = new JLabel("Entre com o seu nome: ");
         TEXTFIELD = new JTextField();
         TEXTCHANGE = new JLabel("");
+        setSize(350, 250);
+        setVisible(true);
         
         setLayout(null);
         
@@ -47,8 +49,7 @@ public class ExampleJButton extends JFrame {
         EventButton event = new EventButton();
         BUTTON.addActionListener(event);
         
-        setSize(350, 250);
-        setVisible(true);
+
     }
     
     private class EventButton implements ActionListener {
@@ -60,15 +61,9 @@ public class ExampleJButton extends JFrame {
     }
     
     public static void main(String[] args) {
-        javax.swing.SwingUtilities.invokeLater(
-                new Runnable() {
-                    public void run() {
-                            JFrame.setDefaultLookAndFeelDecorated(true);
-                            ExampleJButton exemplo = new ExampleJButton();
-                            exemplo.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                    }
-                }
-        );
+//        JFrame.setDefaultLookAndFeelDecorated(true);
+        ExampleJButton exemplo = new ExampleJButton();
+        exemplo.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
-    
+
 }
