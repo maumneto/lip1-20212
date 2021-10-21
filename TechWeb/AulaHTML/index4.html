@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Criando Tabelas com o HTML</title>
+    <style>
+        table, tr, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        tr, th, td {
+            text-align: center;
+        }
+        td:nth-child(even), th:nth-child(even) {
+            background-color: rgb(204, 201, 201);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <caption>Primeira Tabela</caption>
+            <tr>
+                <th><b>ID</b></th>
+                <th><b>Nome</b></th>
+                <th><b>Curso</b></th>
+            </th>
+            <tr>
+                <td>01</td>
+                <td>mauricio</td>
+                <td>SI</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>João</td>
+                <td>Direito</td>
+            </tr>
+        </table>
+    </div>
+
+    <br/>
+
+    <div>
+        <table>
+            <caption>Segunda Tabela</caption>
+            <thead>
+                <td><b>ID</b></td>
+                <td><b>Nome</b></td>
+                <td><b>Curso</b></td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>Maurício</td>
+                    <td>SI</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>João</td>
+                    <td>Direito</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br/>
+
+    <div>
+        <table>
+            <caption>Quarta Tabela</caption>
+            <tr>
+                <th colspan="2"><b>Nome</b></th>
+                <th><b>Curso</b></th>
+            </th>
+            <tr>
+                <td>01</td>
+                <td>mauricio</td>
+                <td>SI</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>João</td>
+                <td>Direito</td>
+            </tr>
+        </table>
+    </div>
+
+    <br/>
+
+    <div>
+        <table>
+            <caption>Quinta Tabela</caption>
+            <tr>
+                <td><b>ID</b></td>
+                <td><b>Nome</b></td>
+                <td><b>Curso</b></td>
+            </th>
+            <tr>
+                <td>01</td>
+                <td>mauricio</td>
+                <td>SI</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>João</td>
+                <td>Direito</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Miguel</td>
+                <td>Engenharia</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>Rafael</td>
+                <td>Medicina</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
