@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de text field</title>
+    <style>
+        label, input {
+            margin: 5px;
+        }
+        .form-card {
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Criando um Exemplo com Text Field</h2>
+    <form>
+        <div class="form-card">
+            <h3><b>Dados do Cliente</b></h3>
+
+            <label for="fname">Nome: </label> <br/>
+            <input type="text" id="fname" name="fname" placeholder="ex: mauricio" />
+            <br/>
+            <label for="sname">Sobrenome: </label> <br/>
+            <input type="text" id="sname" name="sname" placeholder="sobrenome"/> <br/>
+        </div>
+
+        <div class="form-card">
+            <h3><b>Escolhendo a Marca do Carro</b></h3>
+
+            <input type="radio" id="bmw" name="marcas" value="BMW"/>
+            <label for="marcas">BMW</label> <br/>
+            <input type="radio" id="Chevrolet" name="marcas" value="Chevrolet"/>
+            <label for="marcas">Chevrolet</label> <br/>
+            <input type="radio" id="Volkswagen" name="marcas" value="Volkswagen"/> 
+            <label for="marcas">Volkswagen</label>
+        </div>
+
+        <div class="form-card">
+            <h3><b>Escolhendo Acessórios</b></h3>
+
+            <input type="checkbox" id="arcond" name="acessorios" value="Ar-Condicionado"/>
+            <label for="acessorios">Ar-Condicionado</label> <br/>
+            <input type="checkbox" id="cam" name="acessorios" value="Camera de Re">
+            <label for="acessorios">Câmera de Ré</label> <br/>
+            <input type="checkbox" id="sismid" name="acessorios" value="Sistema de Midia">
+            <label for="acessorios">Sistema de Mídia</label>
+        </div>
+
+        <input type="submit">
+    </form>
+
+</body>
+</html>

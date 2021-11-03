@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de Classes</title>
+    <style>
+        .card1 {
+            color: white;
+            background-color: blueviolet;
+            border: 2px solid white;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .destaque {
+            font-size: 140%;
+            color: red;
+            font-weight: bold;
+            font-family: monospace;
+        }
+
+        .card2 {
+            color: black;
+            background-color: whitesmoke;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        #exampleId {
+            color: black;
+            font-weight: bold;
+            font-size: large;
+            border: 2px solid red;
+            margin: 15px;
+            padding: 15px;
+        }
+    </style>
+    <script>
+        function greeting() {
+            document.getElementById("title").innerHTML = "Sejam Bem Vindos";
+        }
+
+        function apagarConteudo() {
+            var cls = document.getElementsByClassName("card2");
+            for (var i = 0; i <= cls.length; i++) {
+                cls[i].style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="greeting()">Bem vindos</button>
+    <button onclick="apagarConteudo()">Apagar</button>
+
+    <div class="card1">
+        <h2>Título do Card</h2>
+        <p>Este é um <span class="destaque">exemplo de card</span> manipulado por classe!</p>
+    </div>
+
+    <div class="card2">
+        <h2>Título do Card</h2>
+        <p>Este é um <span class="destaque">exemplo de card</span> manipulado por classe!</p>
+    </div>
+
+    <div class="card1">
+        <h2 id="title">Aguarde</h2>
+        <p id="exampleId">Este é um exemplo de card manipulado por classe!</p>
+    </div>
+
+    <div class="card2">
+        <h2>Título do Card</h2>
+        <p>Este é um exemplo de card manipulado por classe!</p>
+    </div>
+</body>
+
+</html>

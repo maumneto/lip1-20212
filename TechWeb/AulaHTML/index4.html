@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <title>Criando Tabelas com o HTML</title>
     <style>
+        /* table {
+            border: 1px solid red;
+        }
+        th, tr, td {
+            border: 1px solid blue;
+        } */
         table, tr, th, td {
             border: 2px solid black;
             border-collapse: collapse;
         }
         tr, th, td {
-            text-align: center;
+            text-align:center;
         }
-        td:nth-child(even), th:nth-child(even) {
+        tr:nth-child(even) {
             background-color: rgb(204, 201, 201);
         }
     </style>
@@ -114,6 +120,27 @@
                 <td>04</td>
                 <td>Rafael</td>
                 <td>Medicina</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <table>
+            <caption>Sexta Tabela</caption>
+            <tr>
+                <th><b>ID</b></th>
+                <th><b>Nome</b></th>
+                <th><b>Curso</b></th>
+            </th>
+            <tr>
+                <td>01</td>
+                <td rowspan="2">mauricio</td>
+                <td>SI</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Direito</td>
+
             </tr>
         </table>
     </div>

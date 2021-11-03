@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo Botão Submit</title>
+    <style>
+        label, input {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2><b>Exemplo de login</b></h2>
+
+    <form action="/ResultSubmit.html" method="get" id="login" autocomplete="on">
+        <label for="fname">Nome: </label>
+        <input type="text" name="fname" id="fname" placeholder="digite o nome"/>
+        <br/>
+        <label for="email">Email: </label>
+        <input type="text" name="email" id="email" placeholder="exemplo@provedor.com"/>
+        <br/>
+        <button type="submit" onclick="sendElements()">Enviar</button>
+    </form>
+    <button onclick="resetarDados()">Resetar</button>
+
+    <script>
+        function sendElements() {
+            var el = document.getElementById("login");
+            var name = el.getElements["fname"].value;
+            var email = el.getElements["email"].value;
+            alert(name);
+            alert(email);
+        }
+
+        function resetarDados() {
+            document.getElementById("login").reset();
+        }
+    </script>
+</body>
+</html>
