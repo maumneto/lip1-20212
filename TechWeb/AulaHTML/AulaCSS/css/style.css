@@ -1,0 +1,12 @@
+body {
+    background-color: rgba(0, 0, 255, 0);
+    opacity: 0.3;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url("../imagembackground.jpg");
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: red;
+    border: 2px dashed black;
+}
