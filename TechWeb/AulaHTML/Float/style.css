@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+.example {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+}
+
+ul {
+    margin-right: 0;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: lightcoral;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    padding: 15px 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+div ~ section {
+    border: 0.5em solid black;
+    font-size: 20px;
+    background-color: aqua;
+}
+
+li a:link {
+    color: blue;
+}
+
+li a:visited {
+    color: green;
+}
+
+li a:hover {
+    background-color: red;
+    color: black;
+}
+
+li a:active {
+    background-color: green;
+}
+
+
+ .teste_pseudoelement::first-letter {
+     font-weight: bold;
+     font-size: 36px;
+     color: red;
+ }
+
+ ::selection {
+     background: green;
+ }

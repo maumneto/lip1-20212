@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            function teste() {
+                document.getElementById("teste").innerHTML = "<h1>Olá Mundo!</h1>";
+                window.alert("Elemento Alterado com Sucesso!");
+                console.log("Foi executado o getElementById");
+            }
+        </script>
+        <button onclick="teste()">Botão</button>
+        <div id="teste">Vou ser alterado...</div>
+    </body>
+</html>
