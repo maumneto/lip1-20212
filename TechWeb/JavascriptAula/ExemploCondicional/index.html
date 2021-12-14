@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <h2>Meu Alarme!</h2>
+        <div id="formulario">
+            <form>
+                <div>
+                    <label for="hour">Hour: </label>
+                    <input type="text" id="hour"/>
+                </div>
+                <div>
+                    <label for="minutes">Minutes: </label>
+                    <input type="text" id="minutes"/>            
+                </div>
+                <div>
+                    <label for="message">Message: </label> <br/>
+                    <textarea id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>     
+        <button onclick="setAlarm()">Set</button>
+        <div id="resultado"></div>  
+    </body>
+</html>

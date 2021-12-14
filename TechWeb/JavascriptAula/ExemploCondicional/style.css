@@ -1,0 +1,14 @@
+#formulario {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+#formulario div {
+    padding: 10px;
+}
+
+button {
+    margin: 5px 0;
+    padding: 5px;
+}
